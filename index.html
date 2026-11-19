@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chicken Products Center — chicks, fresh eggs, mature chickens & feeds</title>
+    <meta name="description" content="Order day-old chicks, fresh farm eggs, mature chickens and poultry feeds online from Chicken Products Center. Verified orders, delivered to your gate." />
+    <meta property="og:title" content="Chicken Products Center" />
+    <meta property="og:description" content="Chicks, fresh eggs, mature chickens and feeds — order online, delivered to your gate." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/og.svg" />
+    <meta name="theme-color" content="#9c3b1c" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..900,50..100;1,9..144,400..700,50..100&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <div id="announce" class="announce" hidden></div>
+    <header class="site-header">
+      <a href="#/" class="brand" aria-label="Chicken Products Center home">
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="24" cy="26" rx="15" ry="19" fill="#f2d9a6" stroke="currentColor" stroke-width="2.5"/><path d="M15 29c3 4 15 4 18 0" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="18" r="3" fill="#9c3b1c"/></svg>
+        <span class="brand-text"><b>Chicken Products</b><i>Center</i></span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span><span></span></button>
+      <nav id="nav" class="nav">
+        <a href="#/shop" data-nav="shop">Shop all</a>
+        <a href="#/shop/chicks" data-nav="chicks">Young chicks</a>
+        <a href="#/shop/eggs" data-nav="eggs">Eggs</a>
+        <a href="#/shop/mature" data-nav="mature">Mature chickens</a>
+        <a href="#/shop/feeds" data-nav="feeds">Feeds</a>
+        <a href="#/about" data-nav="about">How ordering works</a>
+        <span class="nav-sep"></span>
+        <a href="#/admin" data-nav="admin" class="admin-link" hidden>Admin</a>
+        <a href="#/orders" data-nav="orders" class="orders-link" hidden>My orders</a>
+        <a href="#/account" data-nav="account" class="account-link">Sign in</a>
+        <a href="#/cart" data-nav="cart" class="cart-link">Cart <span class="cart-count">0</span></a>
+      </nav>
+    </header>
+    <main id="app" tabindex="-1"></main>
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-big">Hatched here.<br/>Raised right.</p>
+          <p class="muted">Chicks, eggs, birds and feed from one trusted yard.</p>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <a href="#/shop/chicks">Young chicks</a><a href="#/shop/eggs">Eggs</a><a href="#/shop/mature">Mature chickens</a><a href="#/shop/feeds">Chicken feeds</a>
+        </div>
+        <div>
+          <h4>Help</h4>
+          <a href="#/about">How ordering works</a><a href="#/orders">Track an order</a><a href="#/account">Your account</a>
+        </div>
+        <div id="footer-contact"><h4>Contact</h4></div>
+      </div>
+      <p class="fine">© <span id="year"></span> Chicken Products Center. Every order is verified by email and phone before it ships.</p>
+    </footer>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
